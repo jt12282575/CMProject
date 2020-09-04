@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <ImageView
+        android:id="@+id/item_iv_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_width="300dp"
+        tools:layout_height="300dp"
+        />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/item_top_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.25"
+        />
+    <TextView
+        android:id="@+id/item_tv_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:textColor="@android:color/black"
+        app:layout_constraintTop_toTopOf="@id/item_top_line"
+        app:layout_constraintLeft_toLeftOf="@id/item_iv_image"
+        app:layout_constraintRight_toRightOf="@id/item_iv_image"
+        tools:text = "1"
+        />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/item_middle_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.55"
+        />
+    <TextView
+        android:id="@+id/item_tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:textColor="@android:color/black"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:ellipsize="end"
+        android:maxLines="2"
+        app:layout_constraintTop_toTopOf="@id/item_middle_line"
+        app:layout_constraintLeft_toLeftOf="@id/item_iv_image"
+        app:layout_constraintRight_toRightOf="@id/item_iv_image"
+        tools:text = "title"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

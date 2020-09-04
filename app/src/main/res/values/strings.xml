@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">CMProject</string>
+    <string name="api_error">出了一點問題</string>
+    <string name="next_page">進下一頁</string>
+    <string name="reconnect">重新連線</string>
+</resources>
